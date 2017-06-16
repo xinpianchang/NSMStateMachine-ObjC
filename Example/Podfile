@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'NSMStateMachine_Example' do
+  pod 'NSMStateMachine', :path => '../'
+
+  target 'NSMStateMachine_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end
